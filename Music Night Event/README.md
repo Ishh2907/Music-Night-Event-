@@ -44,7 +44,11 @@ artists, schedule, venue and registration.
 
 ## Live Website
 
-Coming soon.
+This project is ready for deployment on Vercel.
+
+## Deployment
+
+The website can be deployed as a static HTML + Tailwind CSS project using Vercel.
 
 ## Project Structure
 
