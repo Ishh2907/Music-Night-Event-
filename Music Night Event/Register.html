@@ -10,77 +10,29 @@
 
 </head>
 
-
-<body class="bg-stone-950 text-white">
+<body class="bg-stone-950 text-white antialiased">
 
     <!-- ================= HEADER ================= -->
 
-    <header
-        class="sticky top-0 z-50 bg-stone-950/90 backdrop-blur-md border-b border-amber-900/30">
+    <header class="sticky top-0 z-50 border-b border-amber-900/30 bg-stone-950/90 backdrop-blur-md">
 
-        <nav
-            class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-4 flex items-center justify-between">
+        <nav class="mx-auto max-w-7xl px-4 py-3 sm:px-6 sm:py-4 lg:px-12">
 
+            <div class="flex flex-col items-center justify-between gap-3 sm:flex-row">
 
-            <!-- Logo -->
-
-            <a
-                href="index.html"
-                class="text-2xl font-bold text-amber-400 hover:text-amber-300 transition">
-
-                NOOR-E-SHAAM
-
-            </a>
-
-
-            <!-- Navigation -->
-
-            <div class="hidden md:flex items-center gap-7 text-sm">
-
-
-                <a
-                    href="index.html"
-                    class="hover:text-amber-400 transition">
-
-                    Home
-
+                <a href="index.html" class="text-xl font-bold text-amber-400 transition hover:text-amber-300 sm:text-2xl">
+                    NOOR-E-SHAAM
                 </a>
 
+                <div class="flex flex-wrap items-center justify-center gap-3 text-xs sm:gap-4 sm:text-sm md:gap-7">
 
-                <a
-                    href="schedule.html"
-                    class="hover:text-amber-400 transition">
+                    <a href="index.html" class="transition hover:text-amber-400">Home</a>
+                    <a href="schedule.html" class="transition hover:text-amber-400">Schedule</a>
+                    <a href="artists.html" class="transition hover:text-amber-400">Artists</a>
+                    <a href="venue.html" class="transition hover:text-amber-400">Venue</a>
+                    <a href="register.html" class="font-semibold text-amber-400">Register</a>
 
-                    Schedule
-
-                </a>
-
-
-                <a
-                    href="artists.html"
-                    class="hover:text-amber-400 transition">
-
-                    Artists
-
-                </a>
-
-
-                <a
-                    href="venue.html"
-                    class="hover:text-amber-400 transition">
-
-                    Venue
-
-                </a>
-
-
-                <a
-                    href="register.html"
-                    class="text-amber-400 font-semibold">
-
-                    Register
-
-                </a>
+                </div>
 
             </div>
 
@@ -92,80 +44,34 @@
 
     <main>
 
+        <section class="relative flex min-h-[45vh] items-center justify-center overflow-hidden sm:min-h-[55vh]">
 
-        <section
-            class="relative min-h-[55vh] flex items-center justify-center overflow-hidden">
-
-
-            <!-- Background Image -->
-
-            <img
-                src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1800&q=85"
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1800&q=85"
                 alt="Live music concert with audience"
-                class="absolute inset-0 w-full h-full object-cover">
+                class="absolute inset-0 h-full w-full object-cover">
 
+            <div class="absolute inset-0 bg-gradient-to-b from-stone-950/60 via-stone-950/75 to-stone-950"></div>
 
-            <!-- Dark Overlay -->
+            <div class="absolute left-5 top-8 h-28 w-28 rounded-full bg-amber-500/20 blur-3xl animate-pulse sm:left-10 sm:h-48 sm:w-48"></div>
+            <div class="absolute bottom-8 right-5 h-32 w-32 rounded-full bg-orange-600/20 blur-3xl sm:bottom-10 sm:right-10 sm:h-56 sm:w-56"></div>
 
-            <div
-                class="absolute inset-0 bg-gradient-to-b from-stone-950/60 via-stone-950/75 to-stone-950">
-            </div>
+            <div class="relative z-10 max-w-4xl px-4 text-center sm:px-5">
 
-
-            <!-- Glow -->
-
-            <div
-                class="absolute top-10 left-10 w-48 h-48 bg-amber-500/20 rounded-full blur-3xl animate-pulse">
-            </div>
-
-
-            <div
-                class="absolute bottom-10 right-10 w-56 h-56 bg-orange-600/20 rounded-full blur-3xl">
-            </div>
-
-
-            <!-- Hero Content -->
-
-            <div
-                class="relative z-10 text-center px-5 max-w-4xl">
-
-
-                <p
-                    class="text-amber-400 uppercase tracking-[0.35em] text-sm mb-5">
-
+                <p class="mb-4 text-[10px] uppercase tracking-[0.25em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
                     Your Evening Starts Here
-
                 </p>
 
-
-                <h1
-                    class="text-5xl sm:text-6xl md:text-8xl font-bold">
-
+                <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-8xl">
                     Get Your
-                    <span class="text-amber-400">
-                        Pass
-                    </span>
-
+                    <span class="text-amber-400">Pass</span>
                 </h1>
 
-
-                <p
-                    class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto mt-6">
-
-                    Reserve your place for an unforgettable evening
-                    of Bollywood music, Sufi melodies and soulful
-                    performances.
-
+                <p class="mx-auto mt-4 max-w-xl text-sm text-stone-300 sm:mt-6 sm:text-base lg:text-lg">
+                    Reserve your place for an unforgettable evening of Bollywood music, Sufi melodies and soulful performances.
                 </p>
 
-
-                <!-- Quirky Badge -->
-
-                <div
-                    class="inline-block mt-8 bg-amber-400 text-stone-950 px-7 py-3 rounded-full font-bold rotate-[-3deg] hover:rotate-3 hover:scale-110 transition duration-300">
-
+                <div class="mt-6 inline-block rounded-full bg-amber-400 px-5 py-3 text-sm font-bold text-stone-950 rotate-[-3deg] transition duration-300 hover:rotate-3 hover:scale-110 sm:px-7 sm:text-base">
                     🎟️ SAVE YOUR SEAT
-
                 </div>
 
             </div>
@@ -174,157 +80,58 @@
 
         <!-- ================= REGISTRATION SECTION ================= -->
 
-        <section
-            class="py-20 px-5 sm:px-8 lg:px-12">
+        <section class="px-4 py-14 sm:px-8 sm:py-18 lg:px-12 lg:py-20">
 
-
-            <div
-                class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
 
                 <!-- ================= LEFT SIDE ================= -->
 
                 <div>
 
-
-                    <!-- Image -->
-
-                    <div
-                        class="relative group mb-8">
-
-
-                        <div
-                            class="absolute -inset-2 bg-amber-500/20 rounded-3xl blur-xl group-hover:bg-amber-500/30 transition">
-                        </div>
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=85"
+                    <div class="group relative mb-6 sm:mb-8">
+                        <div class="absolute -inset-2 rounded-3xl bg-amber-500/20 blur-xl transition group-hover:bg-amber-500/30"></div>
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=85"
                             alt="Crowd enjoying a live music event"
-                            class="relative w-full h-[350px] object-cover rounded-3xl group-hover:scale-[1.02] transition duration-500">
-
+                            class="relative h-[240px] w-full rounded-3xl object-cover transition duration-500 group-hover:scale-[1.02] sm:h-[300px] lg:h-[350px]">
                     </div>
-
-
-
-                    <!-- Information -->
 
                     <div>
 
-                        <p
-                            class="text-amber-400 uppercase tracking-widest text-sm">
+                        <p class="text-sm uppercase tracking-widest text-amber-400">One Night • One Memory</p>
 
-                            One Night • One Memory
-
-                        </p>
-
-
-                        <h2
-                            class="text-4xl sm:text-5xl font-bold mt-3">
-
+                        <h2 class="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
                             Be Part Of The
-                            <span class="text-amber-400">
-                                Shaam
-                            </span>
-
+                            <span class="text-amber-400">Shaam</span>
                         </h2>
 
-
-                        <p
-                            class="text-stone-400 mt-5 leading-7">
-
-                            Noor-E-Shaam brings together music,
-                            people and stories for one magical
-                            evening in Jaipur.
-
+                        <p class="mt-4 text-sm leading-7 text-stone-400 sm:text-base">
+                            Noor-E-Shaam brings together music, people and stories for one magical evening in Jaipur.
                         </p>
 
+                        <div class="mt-7 space-y-4">
 
-                        <!-- Event Details -->
-
-                        <div
-                            class="mt-8 space-y-4">
-
-
-                            <div
-                                class="flex items-center gap-4 bg-stone-900 border border-stone-800 p-4 rounded-2xl hover:border-amber-400/50 transition">
-
-
-                                <div
-                                    class="w-12 h-12 bg-amber-400 text-stone-950 rounded-full flex items-center justify-center text-xl">
-
-                                    📅
-
-                                </div>
-
-
+                            <div class="flex items-center gap-4 rounded-2xl border border-stone-800 bg-stone-900 p-4 transition hover:border-amber-400/50">
+                                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amber-400 text-xl text-stone-950 sm:h-12 sm:w-12">📅</div>
                                 <div>
-
-                                    <p class="text-stone-500 text-sm">
-                                        Date
-                                    </p>
-
-                                    <p class="font-bold">
-                                        18 October 2026
-                                    </p>
-
+                                    <p class="text-xs text-stone-500 sm:text-sm">Date</p>
+                                    <p class="font-bold">18 October 2026</p>
                                 </div>
-
                             </div>
 
-
-
-                            <div
-                                class="flex items-center gap-4 bg-stone-900 border border-stone-800 p-4 rounded-2xl hover:border-amber-400/50 transition">
-
-
-                                <div
-                                    class="w-12 h-12 bg-amber-400 text-stone-950 rounded-full flex items-center justify-center text-xl">
-
-                                    🕐
-
-                                </div>
-
-
+                            <div class="flex items-center gap-4 rounded-2xl border border-stone-800 bg-stone-900 p-4 transition hover:border-amber-400/50">
+                                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amber-400 text-xl text-stone-950 sm:h-12 sm:w-12">🕐</div>
                                 <div>
-
-                                    <p class="text-stone-500 text-sm">
-                                        Time
-                                    </p>
-
-                                    <p class="font-bold">
-                                        6:00 PM onwards
-                                    </p>
-
+                                    <p class="text-xs text-stone-500 sm:text-sm">Time</p>
+                                    <p class="font-bold">6:00 PM onwards</p>
                                 </div>
-
                             </div>
 
-
-
-                            <div
-                                class="flex items-center gap-4 bg-stone-900 border border-stone-800 p-4 rounded-2xl hover:border-amber-400/50 transition">
-
-
-                                <div
-                                    class="w-12 h-12 bg-amber-400 text-stone-950 rounded-full flex items-center justify-center text-xl">
-
-                                    📍
-
-                                </div>
-
-
+                            <div class="flex items-center gap-4 rounded-2xl border border-stone-800 bg-stone-900 p-4 transition hover:border-amber-400/50">
+                                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amber-400 text-xl text-stone-950 sm:h-12 sm:w-12">📍</div>
                                 <div>
-
-                                    <p class="text-stone-500 text-sm">
-                                        Venue
-                                    </p>
-
-                                    <p class="font-bold">
-                                        JECC, Sitapura, Jaipur
-                                    </p>
-
+                                    <p class="text-xs text-stone-500 sm:text-sm">Venue</p>
+                                    <p class="font-bold">JECC, Sitapura, Jaipur</p>
                                 </div>
-
                             </div>
 
                         </div>
@@ -335,298 +142,89 @@
 
                 <!-- ================= FORM ================= -->
 
-                <div
-                    class="bg-stone-900 rounded-3xl border border-stone-800 p-6 sm:p-8 lg:p-10 shadow-2xl hover:border-amber-500/40 transition">
+                <div class="rounded-3xl border border-stone-800 bg-stone-900 p-5 shadow-2xl transition hover:border-amber-500/40 sm:p-8 lg:p-10">
 
+                    <div class="mb-7 sm:mb-8">
 
-                    <!-- Form Heading -->
-
-                    <div class="mb-8">
-
-                        <div
-                            class="inline-block bg-amber-400 text-stone-950 px-4 py-2 rounded-full text-sm font-bold rotate-[-2deg]">
-
+                        <div class="inline-block rounded-full bg-amber-400 px-4 py-2 text-xs font-bold text-stone-950 rotate-[-2deg] sm:text-sm">
                             🎶 REGISTRATION
-
                         </div>
 
-
-                        <h2
-                            class="text-3xl sm:text-4xl font-bold mt-5">
-
+                        <h2 class="mt-5 text-3xl font-bold sm:text-4xl">
                             Reserve Your
-                            <span class="text-amber-400">
-                                Spot
-                            </span>
-
+                            <span class="text-amber-400">Spot</span>
                         </h2>
 
-
-                        <p
-                            class="text-stone-500 mt-2">
-
+                        <p class="mt-2 text-sm text-stone-500 sm:text-base">
                             Fill in your details to register for the event.
-
                         </p>
 
                     </div>
 
-
-
-                    <!-- FORM -->
-
-                    <form
-                        action="#"
-                        method="post"
-                        class="space-y-6">
-
-
-                        <!-- Name -->
+                    <form action="#" method="post" class="space-y-5 sm:space-y-6">
 
                         <div>
-
-                            <label
-                                for="name"
-                                class="block text-sm font-semibold mb-2">
-
-                                Full Name
-
-                            </label>
-
-
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Enter your full name"
-                                required
-                                class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition">
-
+                            <label for="name" class="mb-2 block text-sm font-semibold">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required class="w-full rounded-xl border border-stone-700 bg-stone-950 px-4 py-3 text-sm outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 sm:text-base">
                         </div>
-
-
-
-                        <!-- Email -->
 
                         <div>
-
-                            <label
-                                for="email"
-                                class="block text-sm font-semibold mb-2">
-
-                                Email Address
-
-                            </label>
-
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="example@gmail.com"
-                                required
-                                class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition">
-
+                            <label for="email" class="mb-2 block text-sm font-semibold">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required class="w-full rounded-xl border border-stone-700 bg-stone-950 px-4 py-3 text-sm outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 sm:text-base">
                         </div>
-
-
-
-                        <!-- Phone -->
 
                         <div>
-
-                            <label
-                                for="phone"
-                                class="block text-sm font-semibold mb-2">
-
-                                Phone Number
-
-                            </label>
-
-
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="Enter your phone number"
-                                required
-                                class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition">
-
+                            <label for="phone" class="mb-2 block text-sm font-semibold">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required class="w-full rounded-xl border border-stone-700 bg-stone-950 px-4 py-3 text-sm outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 sm:text-base">
                         </div>
-
-
-
-                        <!-- City -->
 
                         <div>
-
-                            <label
-                                for="city"
-                                class="block text-sm font-semibold mb-2">
-
-                                City
-
-                            </label>
-
-
-                            <input
-                                type="text"
-                                id="city"
-                                name="city"
-                                placeholder="Enter your city"
-                                class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition">
-
+                            <label for="city" class="mb-2 block text-sm font-semibold">City</label>
+                            <input type="text" id="city" name="city" placeholder="Enter your city" class="w-full rounded-xl border border-stone-700 bg-stone-950 px-4 py-3 text-sm outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 sm:text-base">
                         </div>
 
-
-
-                        <!-- Ticket + Guests -->
-
-                        <div
-                            class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-
-
-                            <!-- Ticket -->
+                        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
 
                             <div>
-
-                                <label
-                                    for="ticket"
-                                    class="block text-sm font-semibold mb-2">
-
-                                    Ticket Type
-
-                                </label>
-
-
-                                <select
-                                    id="ticket"
-                                    name="ticket"
-                                    class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition">
-
-                                    <option>
-                                        Student - ₹299
-                                    </option>
-
-                                    <option>
-                                        VIP - ₹599
-                                    </option>
-
-                                    <option>
-                                        Premium - ₹999
-                                    </option>
-
+                                <label for="ticket" class="mb-2 block text-sm font-semibold">Ticket Type</label>
+                                <select id="ticket" name="ticket" class="w-full rounded-xl border border-stone-700 bg-stone-950 px-4 py-3 text-sm outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 sm:text-base">
+                                    <option>Student - ₹299</option>
+                                    <option>VIP - ₹599</option>
+                                    <option>Premium - ₹999</option>
                                 </select>
-
                             </div>
 
-
-
-                            <!-- Guests -->
-
                             <div>
-
-                                <label
-                                    for="guests"
-                                    class="block text-sm font-semibold mb-2">
-
-                                    Number of Guests
-
-                                </label>
-
-
-                                <select
-                                    id="guests"
-                                    name="guests"
-                                    class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition">
-
+                                <label for="guests" class="mb-2 block text-sm font-semibold">Number of Guests</label>
+                                <select id="guests" name="guests" class="w-full rounded-xl border border-stone-700 bg-stone-950 px-4 py-3 text-sm outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 sm:text-base">
                                     <option>1 Guest</option>
-
                                     <option>2 Guests</option>
-
                                     <option>3 Guests</option>
-
                                     <option>4 Guests</option>
-
                                 </select>
-
                             </div>
 
                         </div>
 
-
-
-                        <!-- Message -->
-
                         <div>
-
-                            <label
-                                for="message"
-                                class="block text-sm font-semibold mb-2">
-
+                            <label for="message" class="mb-2 block text-sm font-semibold">
                                 Special Request
-                                <span class="text-stone-600">
-                                    (Optional)
-                                </span>
-
+                                <span class="text-stone-600">(Optional)</span>
                             </label>
-
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="4"
-                                placeholder="Any special request..."
-                                class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition"></textarea>
-
+                            <textarea id="message" name="message" rows="4" placeholder="Any special request..." class="w-full rounded-xl border border-stone-700 bg-stone-950 px-4 py-3 text-sm outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 sm:text-base"></textarea>
                         </div>
 
-
-
-                        <!-- Checkbox -->
-
-                        <div
-                            class="flex items-start gap-3">
-
-
-                            <input
-                                type="checkbox"
-                                id="terms"
-                                name="terms"
-                                required
-                                class="mt-1 accent-amber-400">
-
-
-                            <label
-                                for="terms"
-                                class="text-sm text-stone-500">
-
-                                I agree to the event terms and
-                                conditions.
-
-                            </label>
-
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="terms" name="terms" required class="mt-1 accent-amber-400">
+                            <label for="terms" class="text-sm text-stone-500">I agree to the event terms and conditions.</label>
                         </div>
 
-
-
-                        <!-- Submit -->
-
-                        <button
-                            type="submit"
-                            class="w-full bg-amber-400 text-stone-950 font-bold py-4 rounded-xl hover:bg-amber-300 hover:scale-[1.02] active:scale-95 transition duration-300 shadow-lg shadow-amber-500/10">
-
+                        <button type="submit" class="w-full rounded-xl bg-amber-400 py-4 text-sm font-bold text-stone-950 shadow-lg shadow-amber-500/10 transition duration-300 hover:bg-amber-300 hover:scale-[1.02] active:scale-95 sm:text-base">
                             🎟️ Register For Noor-E-Shaam
-
                         </button>
 
-
-                        <p
-                            class="text-center text-xs text-stone-600">
-
-                            Your information is used only for
-                            event registration.
-
+                        <p class="text-center text-[11px] text-stone-600 sm:text-xs">
+                            Your information is used only for event registration.
                         </p>
 
                     </form>
@@ -639,191 +237,49 @@
 
         <!-- ================= TICKET CARDS ================= -->
 
-        <section
-            class="py-20 bg-stone-900/60 px-5 sm:px-8">
+        <section class="bg-stone-900/60 px-4 py-16 sm:px-8 sm:py-20">
 
+            <div class="mx-auto max-w-6xl">
 
-            <div
-                class="max-w-6xl mx-auto">
-
-
-                <div
-                    class="text-center mb-12">
-
-                    <p
-                        class="text-amber-400 uppercase tracking-widest text-sm">
-
-                        Choose Your Experience
-
-                    </p>
-
-
-                    <h2
-                        class="text-4xl font-bold mt-3">
-
+                <div class="mb-10 text-center sm:mb-12">
+                    <p class="text-sm uppercase tracking-widest text-amber-400">Choose Your Experience</p>
+                    <h2 class="mt-3 text-3xl font-bold sm:text-4xl">
                         Pick Your
-                        <span class="text-amber-400">
-                            Pass
-                        </span>
-
+                        <span class="text-amber-400">Pass</span>
                     </h2>
-
                 </div>
 
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
 
-
-                <div
-                    class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-
-                    <!-- Student -->
-
-                    <article
-                        class="bg-stone-950 border border-stone-800 rounded-3xl p-7 text-center hover:-translate-y-3 hover:border-amber-400/60 transition duration-500">
-
-                        <div class="text-4xl">
-                            🎓
-                        </div>
-
-                        <h3
-                            class="text-2xl font-bold mt-4">
-
-                            Student
-
-                        </h3>
-
-
-                        <p
-                            class="text-4xl font-bold text-amber-400 mt-4">
-
-                            ₹299
-
-                        </p>
-
-
-                        <p class="text-stone-500 mt-2">
-                            Entry Pass
-                        </p>
-
-
-                        <div
-                            class="border-t border-stone-800 my-6">
-                        </div>
-
-
-                        <p class="text-stone-400 text-sm">
-                            ✓ Event Entry
-                        </p>
-
-                        <p class="text-stone-400 text-sm mt-2">
-                            ✓ General Seating
-                        </p>
-
+                    <article class="rounded-3xl border border-stone-800 bg-stone-950 p-6 text-center transition duration-500 hover:-translate-y-3 hover:border-amber-400/60 sm:p-7">
+                        <div class="text-4xl">🎓</div>
+                        <h3 class="mt-4 text-2xl font-bold">Student</h3>
+                        <p class="mt-4 text-4xl font-bold text-amber-400">₹299</p>
+                        <p class="mt-2 text-stone-500">Entry Pass</p>
+                        <div class="my-6 border-t border-stone-800"></div>
+                        <p class="text-sm text-stone-400">✓ Event Entry</p>
+                        <p class="mt-2 text-sm text-stone-400">✓ General Seating</p>
                     </article>
 
-
-
-                    <!-- VIP -->
-
-                    <article
-                        class="relative bg-amber-400 text-stone-950 rounded-3xl p-7 text-center hover:-translate-y-3 hover:scale-[1.02] transition duration-500 shadow-xl shadow-amber-500/10">
-
-
-                        <div
-                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-stone-950 text-amber-400 px-4 py-1 rounded-full text-xs font-bold">
-
-                            POPULAR
-
-                        </div>
-
-
-                        <div class="text-4xl">
-                            ⭐
-                        </div>
-
-
-                        <h3
-                            class="text-2xl font-bold mt-4">
-
-                            VIP
-
-                        </h3>
-
-
-                        <p
-                            class="text-4xl font-bold mt-4">
-
-                            ₹599
-
-                        </p>
-
-
-                        <p class="opacity-70 mt-2">
-                            Premium Entry
-                        </p>
-
-
-                        <div
-                            class="border-t border-stone-950/20 my-6">
-                        </div>
-
-
-                        <p class="text-sm">
-                            ✓ Priority Entry
-                        </p>
-
-                        <p class="text-sm mt-2">
-                            ✓ Better Seating
-                        </p>
-
+                    <article class="relative rounded-3xl bg-amber-400 p-6 text-center text-stone-950 shadow-xl shadow-amber-500/10 transition duration-500 hover:-translate-y-3 hover:scale-[1.02] sm:p-7">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-stone-950 px-4 py-1 text-[10px] font-bold text-amber-400 sm:text-xs">POPULAR</div>
+                        <div class="text-4xl">⭐</div>
+                        <h3 class="mt-4 text-2xl font-bold">VIP</h3>
+                        <p class="mt-4 text-4xl font-bold">₹599</p>
+                        <p class="mt-2 opacity-70">Premium Entry</p>
+                        <div class="my-6 border-t border-stone-950/20"></div>
+                        <p class="text-sm">✓ Priority Entry</p>
+                        <p class="mt-2 text-sm">✓ Better Seating</p>
                     </article>
 
-
-
-                    <!-- Premium -->
-
-                    <article
-                        class="bg-stone-950 border border-stone-800 rounded-3xl p-7 text-center hover:-translate-y-3 hover:border-amber-400/60 transition duration-500">
-
-                        <div class="text-4xl">
-                            👑
-                        </div>
-
-
-                        <h3
-                            class="text-2xl font-bold mt-4">
-
-                            Premium
-
-                        </h3>
-
-
-                        <p
-                            class="text-4xl font-bold text-amber-400 mt-4">
-
-                            ₹999
-
-                        </p>
-
-
-                        <p class="text-stone-500 mt-2">
-                            Ultimate Experience
-                        </p>
-
-
-                        <div
-                            class="border-t border-stone-800 my-6">
-                        </div>
-
-
-                        <p class="text-stone-400 text-sm">
-                            ✓ Premium Seating
-                        </p>
-
-                        <p class="text-stone-400 text-sm mt-2">
-                            ✓ Priority Access
-                        </p>
-
+                    <article class="rounded-3xl border border-stone-800 bg-stone-950 p-6 text-center transition duration-500 hover:-translate-y-3 hover:border-amber-400/60 sm:p-7 sm:col-span-2 xl:col-span-1">
+                        <div class="text-4xl">👑</div>
+                        <h3 class="mt-4 text-2xl font-bold">Premium</h3>
+                        <p class="mt-4 text-4xl font-bold text-amber-400">₹999</p>
+                        <p class="mt-2 text-stone-500">Ultimate Experience</p>
+                        <div class="my-6 border-t border-stone-800"></div>
+                        <p class="text-sm text-stone-400">✓ Premium Seating</p>
+                        <p class="mt-2 text-sm text-stone-400">✓ Priority Access</p>
                     </article>
 
                 </div>
@@ -834,52 +290,24 @@
 
         <!-- ================= FINAL CTA ================= -->
 
-        <section
-            class="py-24 px-5 text-center relative overflow-hidden">
+        <section class="relative overflow-hidden px-4 py-16 text-center sm:py-24">
 
-
-            <div
-                class="absolute inset-0 bg-gradient-to-r from-amber-900/20 via-orange-900/20 to-amber-900/20">
-            </div>
-
+            <div class="absolute inset-0 bg-gradient-to-r from-amber-900/20 via-orange-900/20 to-amber-900/20"></div>
 
             <div class="relative">
+                <div class="mb-6 text-5xl animate-bounce">🎶</div>
 
-
-                <div
-                    class="text-5xl mb-6 animate-bounce">
-
-                    🎶
-
-                </div>
-
-
-                <h2
-                    class="text-4xl sm:text-5xl font-bold">
-
+                <h2 class="text-3xl font-bold sm:text-4xl lg:text-5xl">
                     See You At
-                    <span class="text-amber-400">
-                        Noor-E-Shaam
-                    </span>
-
+                    <span class="text-amber-400">Noor-E-Shaam</span>
                 </h2>
 
-
-                <p
-                    class="text-stone-400 mt-4">
-
-                    Come for the music.
-                    Stay for the memories.
-
+                <p class="mt-4 text-sm text-stone-400 sm:text-base">
+                    Come for the music.<br class="sm:hidden"> Stay for the memories.
                 </p>
 
-
-                <a
-                    href="venue.html"
-                    class="inline-block mt-8 bg-amber-400 text-stone-950 px-8 py-4 rounded-full font-bold hover:bg-amber-300 hover:scale-110 transition duration-300">
-
+                <a href="venue.html" class="mt-8 inline-block rounded-full bg-amber-400 px-7 py-4 text-sm font-bold text-stone-950 transition duration-300 hover:scale-110 hover:bg-amber-300 sm:text-base">
                     View Venue →
-
                 </a>
 
             </div>
@@ -890,93 +318,33 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer
-        class="border-t border-stone-800 bg-stone-950">
+    <footer class="border-t border-stone-800 bg-stone-950">
 
-        <div
-            class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-10">
+        <div class="mx-auto max-w-7xl px-4 py-10 sm:px-8 lg:px-12">
 
-
-            <div
-                class="flex flex-col md:flex-row justify-between gap-8">
-
+            <div class="flex flex-col justify-between gap-8 md:flex-row">
 
                 <div>
-
-                    <h2
-                        class="text-2xl font-bold text-amber-400">
-
-                        NOOR-E-SHAAM
-
-                    </h2>
-
-
-                    <p
-                        class="text-stone-500 mt-2">
-
-                        An Evening of Music, Sufi & Soul.
-
-                    </p>
-
+                    <h2 class="text-2xl font-bold text-amber-400">NOOR-E-SHAAM</h2>
+                    <p class="mt-2 text-stone-500">An Evening of Music, Sufi & Soul.</p>
                 </div>
 
-
-
-                <div
-                    class="flex flex-wrap gap-6 text-sm">
-
-
-                    <a
-                        href="index.html"
-                        class="hover:text-amber-400 transition">
-
-                        Home
-
-                    </a>
-
-
-                    <a
-                        href="schedule.html"
-                        class="hover:text-amber-400 transition">
-
-                        Schedule
-
-                    </a>
-
-
-                    <a
-                        href="artists.html"
-                        class="hover:text-amber-400 transition">
-
-                        Artists
-
-                    </a>
-
-
-                    <a
-                        href="venue.html"
-                        class="hover:text-amber-400 transition">
-
-                        Venue
-
-                    </a>
-
+                <div class="flex flex-wrap gap-4 text-sm sm:gap-6">
+                    <a href="index.html" class="transition hover:text-amber-400">Home</a>
+                    <a href="schedule.html" class="transition hover:text-amber-400">Schedule</a>
+                    <a href="artists.html" class="transition hover:text-amber-400">Artists</a>
+                    <a href="venue.html" class="transition hover:text-amber-400">Venue</a>
                 </div>
 
             </div>
 
-
-            <div
-                class="border-t border-stone-800 mt-8 pt-6 text-center text-stone-600 text-sm">
-
+            <div class="mt-8 border-t border-stone-800 pt-6 text-center text-sm text-stone-600">
                 © 2026 Noor-E-Shaam. All rights reserved.
-
             </div>
 
         </div>
 
     </footer>
-
 
 </body>
 
